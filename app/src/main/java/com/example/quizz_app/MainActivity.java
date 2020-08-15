@@ -89,13 +89,26 @@ public class MainActivity extends AppCompatActivity {
             wrongAnswers = wrongAnswers + "Q3\n";
         }
 
+        if (question4.isChecked()) {
+            correctAnswers++;
+        } else {
+            wrongAnswers = wrongAnswers + "Q4\n";
+        }
+
+
         if (answerFive.equals(question5.getText().toString())) {
             correctAnswers++;
         } else {
             wrongAnswers = wrongAnswers + "Q5\n";
         }
 
-        if (correctAnswers == 4) {
+        if (question8_1.isChecked() && question8_2.isChecked() && question8_4.isChecked() && !(wrongAnswerEight.isChecked())) {
+            correctAnswers++;
+        } else {
+            wrongAnswers = wrongAnswers + "Q8\n";
+        }
+
+        if (correctAnswers == 5) {
             Toast.makeText(this, "Congrats, All Answers Correct", Toast.LENGTH_LONG).show();
         } else {
             Toast.makeText(this, "Correct Answers: " + correctAnswers + " /4\n" + wrongAnswers, Toast.LENGTH_LONG).show();
