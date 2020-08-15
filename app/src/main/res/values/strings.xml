@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Fussball Quiz</string>
+    <string name="Question1">Wer war amtierender Fußball-Europameister 2012?</string>
+    <string name="Question2">Welches ist das größte Fußballstadion in Europa?</string>
+    <string name="Question3">Wer ist aktueller Präsident der UEFA</string>
+    <string name="Question4">Wie viele Mannschaften sind Teil der ersten Fußball-Bundesliga?</string>
+    <string name="Question5">Welches Land kann die meisten WM-Titel für sich verbuchen?</string>
+    <string name="Question6">Was passiert, wenn der Schiedsrichter "Abseits" pfeift?</string>
+    <string name="Question7">Welche Spieler haben schon einmal zusammen WM - Gewonnen</string>
+
+    <string name="RadioButtonQuestionOneOptionOne">Spanien</string>
+    <string name="RadioButtonQuestionOneOptionTwo">Deutschland</string>
+    <string name="RadioButtonQuestionOneOptionThree">Protugal</string>
+
+
+    <string name="RadioButtonQuestionTwoOptionOne">Das Olympiastadion in Berlin</string>
+    <string name="RadioButtonQuestionTwoOptionTwo">Das Camp Nou in Barcelona</string>
+    <string name="RadioButtonQuestionTwoOptionThree">Das Wembley-Stadion in London</string>
+
+
+    <string name="RadioButtonQuestionThreeOptionOne">Michel Platini</string>
+    <string name="RadioButtonQuestionThreeOptionTwo">Gianni Infantino</string>
+    <string name="RadioButtonQuestionThreeOptionThree">Aleksander Čeferin</string>
+
+
+    <string name="RadioButtonQuestionFourOptionOne">12</string>
+    <string name="RadioButtonQuestionFourOptionTwo">18</string>
+    <string name="RadioButtonQuestionFourOptionThree">21</string>
+
+    <string name="RadioButtonQuestionFiveOptionOne">Deutschland</string>
+    <string name="RadioButtonQuestionFiveOptionTwo">Portugal</string>
+    <string name="RadioButtonQuestionFiveOptionThree">Brasilien</string>
+
+
+    <string name="RadioButtonQuestionSixOptionOne">Gar nichts.</string>
+    <string name="RadioButtonQuestionSixOptionTwo">Das Spiel wird unterbrochen.</string>
+    <string name="RadioButtonQuestionSixOptionThree">Die Mannschaft, die zuletzt in der Verteidigungsposition war, bekommt einen Einwurf.</string>
+
+    <string name="CheckBoxQuestionSevenOptionOne">Ronaldo</string>
+    <string name="CheckBoxQuestionSevenOptionTwo">Rivaldo</string>
+    <string name="CheckBoxQuestionSevenOptionThree">Romario</string>
+    <string name="CheckBoxQuestionSevenOptionFour">Robinho</string>
+
+
+    <string name="Typehere">Hier eingeben</string>
+
+    <string name="AnswerFive">Brasilien</string>
+
+
+    <string name="ButtonSubmit">Absenden</string>
+    <string name="ButtonReset">Zurücksetzen</string>
+
+
+</resources>
