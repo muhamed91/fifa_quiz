@@ -45,6 +45,9 @@
     <string name="Typehere">Hier eingeben</string>
 
     <string name="AnswerFive">Brasilien</string>
+    <string name="allCorrect">Congrats, All Answers Correct</string>
+
+    <string name="allFailed">Failed, All Answers was incorrect</string>
 
 
     <string name="ButtonSubmit">Absenden</string>

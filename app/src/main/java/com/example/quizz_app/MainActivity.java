@@ -27,11 +27,14 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton question7;
     private CheckBox wrongAnswerEight;
     private EditText question5;
-    private int correctAnswers;
 
     private CheckBox question8_1;
     private CheckBox question8_2;
     private CheckBox question8_4;
+
+    private int correctAnswers = 0;
+    private int wrongAnswers = 0;
+
 
 
 
@@ -65,59 +68,70 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
+
     }
 
 
     public void SubmitResponse(View v) {
 
+
         String answerFive = getResources().getString(R.string.AnswerFive);
 
-        String wrongAnswers = "Check :";
+        String allCorrect = getResources().getString(R.string.allCorrect);
+        String allFailed = getResources().getString(R.string.allFailed);
+
+
         if (question1.isChecked()) {
             correctAnswers++;
         } else {
-            wrongAnswers = wrongAnswers + "Q1\n";
+            wrongAnswers++;
         }
         if (question2.isChecked()) {
             correctAnswers++;
         } else {
-            wrongAnswers = wrongAnswers + "Q2\n";
+            wrongAnswers++;
         }
         if (question3.isChecked()) {
             correctAnswers++;
         } else {
-            wrongAnswers = wrongAnswers + "Q3\n";
+            wrongAnswers++;
         }
 
         if (question4.isChecked()) {
             correctAnswers++;
         } else {
-            wrongAnswers = wrongAnswers + "Q4\n";
+            wrongAnswers++;
         }
 
 
         if (answerFive.equals(question5.getText().toString())) {
             correctAnswers++;
         } else {
-            wrongAnswers = wrongAnswers + "Q5\n";
+            wrongAnswers++;
         }
 
         if (question8_1.isChecked() && question8_2.isChecked() && question8_4.isChecked() && !(wrongAnswerEight.isChecked())) {
             correctAnswers++;
         } else {
-            wrongAnswers = wrongAnswers + "Q8\n";
+            wrongAnswers++;
         }
 
-        if (correctAnswers == 5) {
-            Toast.makeText(this, "Congrats, All Answers Correct", Toast.LENGTH_LONG).show();
+        if (correctAnswers == 6) {
+            Toast.makeText(this, allCorrect , Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(this, "Correct Answers: " + correctAnswers + " /4\n" + wrongAnswers, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Correct Answers: " + correctAnswers + "\n" + "Wrong answers: " + wrongAnswers, Toast.LENGTH_LONG).show();
         }
 
 
+        if(wrongAnswers == 6 ) {
+            Toast.makeText(this, allFailed, Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, "Correct Answers: " + correctAnswers + "\n" + "Wrong answers: " + wrongAnswers, Toast.LENGTH_LONG).show();
+        }
 
-
-
+        ResetQuiz(findViewById(R.id.all));
 
 
     }
@@ -125,6 +139,8 @@ public class MainActivity extends AppCompatActivity {
     public void ResetQuiz(View v) {
 
         correctAnswers = 0;
+        wrongAnswers = 0;
+
 
 
         question5.getText().clear();
